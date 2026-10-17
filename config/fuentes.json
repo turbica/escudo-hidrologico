@@ -1,0 +1,20 @@
+{
+    "saih_jucar_resumen_umbrales": "https://saih.chj.es/resumen-aforos",
+    "saih_jucar_aforos_tiempo_real": "https://saih.chj.es/aforos",
+    "patricova_inundabilidad": "https://datos.gob.es/es/catalogo/a10002983-patricova-peligrosidad-por-inundacion-plan-de-accion-territorial-de-caracter-sectorial-sobre-prevencion-del-riesgo-de-inundacion-en-la-comunitat-valenciana",
+    "geoportal_valencia_capas": "https://geoportal.valencia.es/apps/GeoportalHome/es/inicio/geodatos-abiertos",
+    "valencia_ckan_portal": "https://opendata.vlci.valencia.es/",
+    "datasets_municipales_femp80": [
+        "Nº 10 - Áreas empresariales o industriales",
+        "Nº 16 - Calidad del agua para el consumo humano",
+        "Nº 37 - Equipamientos municipales (centros públicos, educativos y sociales)"
+    ],
+    "estaciones_referencia_saih": [
+        "Turia: EA 18 Zagra (Tuéjar), Embalse de Benagéber, EA 147 Salida Loriguilla (Chulilla)",
+        "Magro: EA 60 Requena, Embalse de Forata (Yátova), EA 93 Macastre, MC Guadassuar",
+        "Palancia y Mijares: EA 148 Jérica, EA 74 Fuente del Baño (Navajas), EA 145 Salida de Arenós, EA 5 Presa de Vila-real",
+        "Vinalopó: MC Sax"
+    ],
+    "saih_jucar_ficha_estacion_ejemplo": "https://saih.chj.es/aforos/13080",
+    "guia_femp_80_datasets_pdf": "https://redtransparenciayparticipacion.es/wp-content/uploads/2025/03/Datos-abiertos-80-conjuntos-de-datos.pdf"
+}
