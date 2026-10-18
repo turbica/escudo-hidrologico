@@ -13,15 +13,26 @@ Alerta temprana hiperlocal de crecidas y sequía para equipamientos vulnerables.
 
 Proyecto social de datos abiertos de València y la Comunitat Valenciana. Forma parte de una iniciativa de tres proyectos paralelos (`radar-vivienda`, `monitor-vmp` y este), nacidos del informe [`doc/informe-datos-abiertos-valencia.md`](doc/informe-datos-abiertos-valencia.md).
 
+## Stack
+
+TypeScript (Node.js 24) en todo el proyecto, PostgreSQL + PostGIS, API con Hono, web con Astro y MapLibre, y despliegue con `docker compose`. Usa el módulo común [`valencia-open-data-core`](https://github.com/turbica/valencia-open-data-core) compartido con los proyectos hermanos. El detalle y el motivo de cada decisión están en [`doc/stack.md`](doc/stack.md).
+
 ## Estructura
 
 ```
+backend/              Colectores, motor de alertas, envíos y API
+web/                  Web pública con mapa (castellano, valenciano e inglés)
+deploy/               docker compose, Caddy y plantilla de configuración
 config/fuentes.json   Endpoints, datasets y URLs de origen
+config/cuencas.json   Grafo de cuenca: estaciones, tramos y municipios aguas abajo
 data/raw/             Descargas periódicas tal cual llegan (no versionado)
 data/processed/       Datos limpios y cruzados (no versionado)
-src/                  Colectores y procesado
-doc/                  Informe de origen y documentación
+doc/                  Informe de origen, stack y documentación
 ```
+
+## Aviso
+
+Escudo Hidrológico es un sistema ciudadano e informativo, **no un sistema oficial de alerta**. No sustituye a los avisos de la Confederación Hidrográfica del Júcar, AEMET, Protección Civil, el 112 Comunitat Valenciana ni ES-Alert. Ante una emergencia, sigue siempre las instrucciones de las autoridades y llama al 112.
 
 ## Canales oficiales
 
